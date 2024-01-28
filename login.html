@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Liv'Aide</title>
+
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/checkPasswd.js"></script>
+    </head>
+
+    <body>
+        <div class="top-elements" id="top-elements">
+            <h1>Livet - Devoirs</h1>
+        </div>
+        
+        <div class="navbar" id="navbar">
+            <ul class="navbar-list" id="navbar-list">
+                <li><a href="index.html"><img src="assets/img/icons_home.png" height=15> Home </a></li>
+                <li><a href="search.html"><img src="assets/img/icons_search.png" height=20> Recherche</a></li>
+                <li><a href="map.html"><img src="assets/img/icons_maps.png" height=20>Carte</a></li>
+            </ul>
+        </div>
+
+        <div class="forms" id="forms">
+            <div class="signup" id="signup">
+                <h2>Créer un compte</h2>
+
+                <form method="post" id="frm" onsubmit="return checkPasswdValue();">
+                    <label>Nom d'utilisateur</label><br>
+                    <input type="text" name="username" required><br>
+
+                    <label>Adresse mail</label><br>
+                    <input type="email" name="email" required><br>
+
+                    <label>Mot de passe</label><br>
+                    <input id="first-paswd" type="password" name="password"><br>
+
+                    <label>Confirmer le Mot de passe</label><br>
+                    <input id="second-paswd" type="password" name="password"><br>
+
+                    <input id="submit" type="submit" value="Créer un compte">
+
+                </form>
+
+                <label id="msg>"></label>
+            </div>
+
+            <div class="login", id="login">
+                <h2>Se connecter</h2>
+
+                <form method="post">
+                    <label>Adresse mail<label><br>
+                    <input type="text" name="email" required><br>
+
+                    <label>Mot de passe</label><br>
+                    <input type="password" name="password" required><br>
+
+                    <input id="submit" type="submit" value="Se connecter">
+                </form>
+            </div>
+        </div>
+        <br>
+        
+        <footer>
+            <button class="legal" id="legal"><a href="legal.html">Mentions Légales</a></button>
+            <button class="contact" id="contact"><a href=contact.html>Signaler un problème</a></button>
+        </footer>
+    </body>
+</html>

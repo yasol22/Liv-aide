@@ -1,0 +1,394 @@
+/* fond général */
+
+body {
+	font-size: 100%;
+	background-color: #4c956c;
+}
+	
+button {
+	border-radius: 20px;
+	font-family: "Andale Mono" , monospace;
+}
+
+a:link, a:visited, a:active  {
+	text-decoration: none;
+	color: inherit;
+}
+
+button:hover, input[type="Submit"]:hover {
+	font-weight: bold;
+}
+
+input[type="submit"] {
+	background-color: #d68c45;
+	border: none;
+	color: white;
+	font-size: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	font-family: monospace;
+	cursor: pointer;
+}
+
+h1,h2,h3 {
+	font-family: "Papyrus", fantasy ;
+}
+
+h2 {
+	font-size: 28px;
+	text-decoration: underline;
+	margin: 5px 10px;
+}
+
+h3  {
+	text-align: center;
+	font-size: 24px;
+	text-decoration: overline underline #D68c45 wavy;
+	color: #fefee3;
+	margin: 35px;
+}
+
+input {
+	border: 2px solid #2c6e49;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 5px;
+}
+
+label {
+	font-weight: 600;
+}
+
+
+.top-elements h1 {
+	position: relative;
+    top : 0;
+	left : 0;
+	right : 0;
+	margin: 0;
+	color: #d68c45;
+	font-size: 5vw;
+	text-align : center;
+	letter-spacing: 10px;
+	border : 7px solid #2c6e49;
+	background-color: #ffc9b9;
+}
+
+.top-elements button {
+	float: right;
+	padding: 7px;
+	margin: 10px 0px 0px 10px;
+	font-size : 20px;
+	letter-spacing: 2px;
+	color: #d68c45;
+	border: none;
+	background-color: #ffc9b9;
+	z-index: 3;
+}
+
+/*navbar présentation */
+
+.navbar {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	z-index: 4;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: white;
+}
+
+.navbar-list li {
+  display: inline-block;
+  margin: 2px 140px;
+}
+
+.navbar-list li a {
+  display:flex;
+  flex-direction: row-reverse;
+  color: black;
+  margin: 5px;
+  padding: 6px 13px;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  letter-spacing: 5px;
+  font-size: 20px;
+  border: 3px double black ;
+  text-decoration: none;
+}
+
+.navbar-list li a:hover {
+  font-weight: bold;
+}
+
+/*navbar fin */
+                                  /* index */
+/*description */
+
+.desc {
+	position: relative;
+	left: 25px;
+	width: 75%;
+	height: auto;
+	margin: 20px;
+	border: 4px solid #d68C45 ;
+	background-color: #fefee3;
+	border-radius: 20px;
+}
+
+.desc-text {
+	padding: 5px;
+	text-align: center;
+	text-indent: 5px;
+	word-spacing: 5px;
+	font-size: 20px;
+}
+ /* fin description */             
+
+/*annonces*/
+
+.annonces {
+	display:flex;
+	flex-direction: row;
+}
+
+.annonces > div {
+	position: relative;
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+    justify-content: space-around;
+	width:50%;
+	margin: 50px;
+	padding: 10px;
+	font-family: "verdana", sans-serif;
+	background-color: #fefee3;
+	border: 5px solid #2c6e49;
+	border-radius: 10px;
+}
+	
+.annonces .statut {
+	font-style: italic;
+}
+
+.annonces .username {
+	font-size: 25px;
+	font-weight: 550;
+	font-family: cursive;
+	color: #d68C45;
+}
+
+.annonces .date {
+	font-weight: bold;
+	align-self: flex-end;
+}
+/*fin annonces */
+
+                                  /* fin index */
+
+                                  /* login */
+	
+
+.forms{
+    height: 400px;
+	margin: 15px 5px;
+	text-align: center;
+	color: #d68C45;
+	z-index: 1;
+}
+	
+
+.signup  {
+	float: right;
+	width: 57%;
+	height: 400px;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+	flex-direction: column;
+	background-color: #fefee3;
+	border: 5px solid  #ffc9b9;
+	border-radius: 25px; 
+}
+
+.login {
+	float: left;
+	height: 350px;
+	width: 40%;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+	flex-direction: column;
+	background-color: #fefee3;
+	border: 5px solid  #ffc9b9;
+	border-radius: 25px; 
+}
+
+.forms label {
+    word-spacing: 3px;	
+	letter-spacing: 2px;
+}
+
+.forms input[type="text"]  {
+	width: 350px;
+	height: 20px;
+}
+
+.forms input[type="email"]  {
+	width: 350px;
+	height: 20px;
+}
+
+.forms input[type="password"]  {
+	width: 350px;
+	height: 20px;
+}
+
+                        /*fin login */
+
+                        /*search*/	
+
+.filters {
+	position: relative;
+	left: 150px;
+	width: 850px;
+	margin: 10px;
+	font-family: sans-serif;
+	z-index: 1;
+	border: none;
+	background-color: #fefee3;
+	border-radius: 10px;
+}
+
+.filters form {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	margin: 3px;
+}
+	
+.filter-niveau {
+	margin: 15px;
+}
+
+.filter-matieres {
+	margin: 15px;
+	padding: 5px;
+}
+
+.filter-matieres select {
+	width: 35%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fefee3;
+}
+
+ 
+						
+						/*fin search/
+						
+						/*map*/
+.map {
+	position: relative;
+	left: 150px;
+	width: 500px;
+	margin: 25px;
+	z-index: 1;
+	border-radius: 10px;
+}
+.map iframe {
+	border: 5px solid #2c6e49;
+	border-radius: 15px;
+}
+
+                       /*fin map*/
+						
+						/*mentions légales*/
+						
+.text-mentions  {
+	color: #fefee3;
+	text-align: justify;
+	margin: 60px 25px;
+	padding: 5px 15px;
+	border: 2px solid  #ffc9b9;
+}
+
+                        /*fin mentions légales*/
+						
+						/*contact*/
+	
+.send-msg  { 
+	margin: 25px 25%;
+	height: 350px;
+	text-align: center;
+}
+
+.send-msg label {
+	text-decoration: 1px underline black;
+	font-weight: 550;
+}
+
+.send-msg input[type="email"] {
+	background-color: #fefee3;
+	width: 350px;
+	height: 20px;
+}
+
+.send-msg textarea {
+	width: 75%;
+    height: 150px;
+	margin: 10px;
+    padding: 12px 20px;
+	border: 2px solid #2c6e49;
+	border-radius: 5px;
+	background-color: #fefee3;
+	resize: none;
+}
+
+     /*fin contact*/
+
+	
+
+/*footer */
+
+footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	margin: 0;
+	background-color: #2c6e49;
+	padding-bottom: 130px;
+	z-index: 1;
+}
+
+footer button {
+  margin: 25px;
+  padding: 5px 10px;
+  font-size: 20px;
+  background-color: #ffc9b9;
+  color: #4C956C;
+  border: none;
+  border-radius: 50px/ 30px;
+}
+
+
+.contact {
+	float: left;
+}
+
+.legal {
+	float: right;
+}
+
+/*footer fin */

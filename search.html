@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Liv'Aide</title>
+
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <div class="top-elements" id="top-elements">
+            <h1>Liv'Aide</h1>
+            <a href="login.html"><button>Se connecter</button></a>
+        </div>
+        
+        <div class="navbar" id="navbar">
+            <ul class="navbar-list" id="navbar-list">
+                <li><a href="index.html"><img src="assets/img/icons_home.png" height=15> Home</a></li>
+                <li><a href="search.html"><img src="assets/img/icons_search.png" height=20> Recherche</a></li>
+                <li><a href="map.html"><img src="assets/img/icons_maps.png" height=20>Carte</a></li>
+            </ul>
+        </div>
+
+        <div class="filters" id="filters">
+            <form method="get">
+                <div class="filter-niveau" id="filter-niveau">
+				<label>Niveau</label> <br>
+                <input type="radio" id="sec" name="niveau" value="seconde">
+                <label for="sec">Seconde</label><br>
+                <input type="radio" id="prem" name="niveau" value="prem">
+                <label for="prem">Première (Générale/STI2D)</label><br>  
+                <input type="radio" id="term" name="niveau" value="term">
+                <label for="term">Terminale (Générale/STI2D)</label>
+				</div>
+                <div class="filter-matieres" id="filter-matieres">
+				<label>Matière</label> <br><br>
+                <select name="matiere" id="matiere">
+                    <optgroup label="Tronc commun">
+                        <option value="de">Allemand</option>
+                        <option value="esp">Espagnol</option>
+						<option value="it">Italien</option>
+                        <option value="eng">Anglais</option>
+                        <option value="phch">Physique - Chimie</option>
+                        <option value="svt">Sciences et Vie de la Terre</option>
+                        <option value="hg">Histoire Géographie</option>
+                        <option value="maths">Mathématiques</option>
+                        <option value="fr">Français</option>
+                        <option value="snt">Sciences Numériques et Technologie</option>
+                        <option value="sicit">Science de l'Ingénieur et Innovation Technologique</option>
+                        <option value="sl">Sciences et Laboratoire</option>
+                    </optgroup>
+                    <optgroup label="Spécialités">
+                        <optgroup label="    Générale">
+                            <option value="nsi">Numérique et Sciences Informatiques</option>
+                            <option value="si">Sciences de l'Ingénieur</option>
+                            <option value="maths">Mathématiques</option>
+                            <option value="svt">Sciences de la Vie de la Terre</option>
+                            <option value="phch">Physique Chimie</option>
+                        </optgroup>
+                        <optgroup label="    STI2D">
+                            <option value="sin">Système d'Information et Numérique</option>
+                            <option value="itec">Innovation Technologique et Éco-conception</option>
+                            <option value="ee">Energie et Environnement</option>
+                            <option value="ac">Architecture et Construction</option>
+                        </optgroup>
+                    </optgroup>
+                </select>
+				</div>
+				<input type="submit" value="Recherche">
+			</form>
+        </div> 
+       
+	    <h3>Annonces qui pourraient vous intéresser </h3>
+        <div class="annonces" id="annonces">
+			<div class ="annonce1" id="annonce1">
+				<p class="username" id="username"> @lyy_s@w </p>
+				<p class="statut" id="statut"> Statut : Liv'Aidant.e </p> <br>
+				<p class="niveau" id="niveau" value="term">Niveau : Terminale Générale </p>
+				<p class="matiere" id="matiere" value="svt"> Matière : Sciences de la Vie de la Terre </p>
+				<p class="date" id="date"> 28/10/2021 </p>
+			</div>
+			<br>
+			<div class ="annonce2" id="annonce2">
+				<p class="username" id="username"> @anonymous25245</p>
+				<p class="statut" id="statut"> Statut : Liv'Aidé.e </p>
+				<p class="niveau" id="niveau" value="seconde"> Niveau : Seconde </p>
+				<p class="matiere" id="matiere" value="hg"> Matière : Histoire Géographie</p>
+				<p class="date" id="date"> 17/03/2022 </p>
+			</div>
+			<br>
+			<div class ="annonce3" id="annonce3">
+				<p class="username" id="username"> @wxyz</p>
+				<p class="statut" id="statut"> Statut : Liv'Aidé.e </p>
+				<p class="niveau" id="niveau" value="prem">Niveau : Première STI2D </p>
+				<p class="matiere" id="matiere" value="itec">Matière : Innovation Technologique et Éco-conception </p>
+				<p class="date" id="date"> 06/09/2022 </p>
+			</div>
+		</div>
+
+        <br>
+
+        <footer>
+                <button class="legal" id="legal"><a href="legal.html">Mentions Légales</a></button>
+                <button class="contact" id="contact"><a href="contact.html">Signaler un problème</a></button>
+        </footer>
+    </body>
+</html>
